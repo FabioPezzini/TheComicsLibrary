@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/comic_page"
+        tools:context=".ui.ComicPage">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="201dp"
+            android:layout_height="268dp"
+            android:padding="5dp"
+            android:background="@drawable/shadow_frame"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/issue_image"/>
+
+    <TextView
+            android:id="@+id/titleTemplate"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:text="@string/title_placeholder"
+            android:textSize="14sp"
+            android:layout_height="18dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+            android:id="@+id/titleView"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:focusable="true"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium-italic"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/titleTemplate"
+            />
+
+    <TextView
+            android:id="@+id/subTitleTemplate"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:text="@string/subtitle_placeholder"
+            android:layout_height="18dp"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/titleView"
+            app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+            android:id="@+id/subTitleView"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium-italic"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/subTitleTemplate"
+    />
+
+    <TextView
+            android:id="@+id/seriesTemplate"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:text="@string/serie_placeholder"
+            android:layout_height="18dp"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/subTitleView"
+            app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+            android:id="@+id/seriesView"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium-italic"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/seriesTemplate"
+    />
+
+    <TextView
+            android:id="@+id/publisherTemplate"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:text="@string/publisher_placeholder"
+            android:layout_height="16dp"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/seriesView"
+            app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+            android:id="@+id/publisherView"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium-italic"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/publisherTemplate"
+    />
+
+    <TextView
+            android:id="@+id/dateTemplate"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:text="@string/date_placeholder"
+            android:layout_height="16dp"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/publisherView"
+            app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+            android:id="@+id/dateView"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium-italic"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/dateTemplate"
+    />
+
+    <TextView
+            android:id="@+id/numbersTemplate"
+            android:layout_width="0dp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:text="@string/numbers_placeholder"
+            android:layout_height="16dp"
+            android:textSize="14sp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/dateView"
+            app:layout_constraintStart_toEndOf="@id/imageView" />
+
+    <TextView
+            android:id="@+id/numbersView"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium-italic"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/numbersTemplate"
+    />
+
+
+    <LinearLayout
+            android:id="@+id/Separator1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="0dp"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/includeTemplate"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/include_placeholder"
+            android:layout_height="18dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+    <TextView
+            android:id="@+id/includeView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp"
+            android:lineSpacingExtra="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/includeTemplate"
+
+            app:layout_constraintBottom_toBottomOf="@id/Separator2"/>
+
+    <LinearLayout
+            android:id="@+id/Separator2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/descTemplate"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="0dp"
+            app:layout_constraintVertical_bias="0.0"/>
+
+    <TextView
+            android:id="@+id/descTemplate"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/desc_placeholder"
+            android:layout_height="18dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="200dp"/>
+
+    <TextView
+            android:id="@+id/descView"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp"
+            android:textSize="14sp"
+            android:layout_marginBottom="2dp"
+            android:lineSpacingExtra="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/descTemplate"
+            app:layout_constraintBottom_toBottomOf="@id/Separator3"/>
+
+    <LinearLayout
+            android:id="@+id/Separator3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="0dp"
+            app:layout_constraintVertical_bias="0.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

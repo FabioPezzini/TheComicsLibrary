@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/comic_info" android:id="@+id/include" app:layout_anchorGravity="right|top"
+             app:layout_anchor="@+id/fabDesire" android:layout_height="0dp"
+             app:layout_constraintStart_toStartOf="parent"
+             android:layout_width="0dp"
+             android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/fabDesire"
+             app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabBought"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:focusable="true"
+            app:srcCompat="@drawable/buy_blank"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/fabDesire" android:layout_marginStart="105dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/include"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabDesire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            tools:srcCompat="@drawable/desire_blank"
+            app:layout_anchor="@+id/include"
+            app:layout_anchorGravity="bottom|center" android:src="@drawable/desire_blank"
+            app:layout_constraintStart_toEndOf="@+id/fabRead"
+            android:layout_marginStart="105dp" app:layout_constraintEnd_toStartOf="@+id/fabBought"
+            android:layout_marginEnd="105dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+    />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:clickable="true"
+            android:focusable="true"
+            tools:srcCompat="@drawable/read_blank"
+            app:layout_anchor="@+id/include"
+            app:layout_anchorGravity="left|bottom" android:src="@drawable/read_blank"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toStartOf="@+id/fabDesire"
+            android:layout_marginEnd="105dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.45" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/include"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
