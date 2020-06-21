@@ -13,13 +13,9 @@ NB = If you need some help to install/configure it, just open an Issue
 ### Roadmap
 - [x] Home screen
 - [x] Search filter
-- [ ] Comic page (review - authors & protagonists)
-- [ ] Search screen
-- [ ] Network availability
+- [x] Comic page (review - authors & protagonists)
 - [ ] MyComics screen
-- [ ] MyComics filter
-- [ ] Add american version of comics
-- [ ] Possibility for the user to extra-info about comics
+- [ ] Possibility for the user to add extra-info about comics
 
 ## Disclaimer
 All rights to the contents of the app (names, images, texts and more) are the property of their respective authors and / or publishing houses, under the protection of international copyright / trademark laws.

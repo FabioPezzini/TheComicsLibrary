@@ -25,7 +25,7 @@
 
     <fragment
             android:id="@+id/navigation_notifications"
-            android:name="com.example.thecomicslibrary.ui.notifications.NotificationsFragment"
+            android:name="com.example.thecomicslibrary.ui.mycomics.MyComicsFragment"
             android:label="@string/title_mycomics"
-            tools:layout="@layout/fragment_notifications"/>
+            tools:layout="@layout/fragment_mycomics"/>
 </navigation>
